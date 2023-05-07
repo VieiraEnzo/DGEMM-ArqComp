@@ -41,7 +41,7 @@ int main() {
 
         // abrir o arquivo para escrita B
     printf("abrindo arquivo...\n");
-    FILE *fp = fopen("matrizB_8000.csv", "w");
+    fp = fopen("matrizB_8000.csv", "w");
     if (fp == NULL) {
         printf("Erro ao abrir o arquivo\n");
         return 1;
