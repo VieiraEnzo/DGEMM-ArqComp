@@ -1,4 +1,5 @@
 #include <x86intrin.h>
+//#include <immintrin.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -20,14 +21,14 @@ void dgemm(size_t n, double* A, double* B, double* C)
 int main() {
 
     printf("mallocking space\n");
-    const int n = 6000;
+    const int n = 8000;
     double *A = (double*)malloc(n * n * sizeof(double));
     double *B = (double*)malloc(n * n * sizeof(double));
     double *C = (double*)malloc(n * n * sizeof(double));
 
     // Initialize matrices A and B
     printf("loading matrix\n");
-    FILE *Ma = fopen("D:\\ProgGaming\\C\\TrabalhoArq\\matrizes\\matrizA.csv", "r");
+    FILE *Ma = fopen("D:\\ProgGaming\\C\\TrabalhoArq\\matrizes\\matrizA_8000.csv", "r");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             fscanf(Ma, "%lf,", &A[i+j*n]);
@@ -35,7 +36,7 @@ int main() {
     }
     fclose(Ma);
 
-    FILE *Mb = fopen("D:\\ProgGaming\\C\\TrabalhoArq\\matrizes\\matrizB.csv", "r");
+    FILE *Mb = fopen("D:\\ProgGaming\\C\\TrabalhoArq\\matrizes\\matrizB_8000.csv", "r");
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             fscanf(Mb, "%lf,", &B[i+j*n]);
