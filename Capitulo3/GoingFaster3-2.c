@@ -55,7 +55,7 @@ int main() {
     printf("Elapsed time: %.4f seconds\n", elapsed_time);
 
     printf("writhing results space\n");
-    FILE *result = fopen("results.csv_3-2", "a");
+    FILE *result = fopen("results_3-2.csv", "a");
     fprintf(result, "Tempo_teste_1,%lf\n",elapsed_time);
     fclose(result);
 
