@@ -3,7 +3,7 @@
 
 int main() {
     
-    const int n = 6000;
+    const int n = 4000;
 
 
     printf("iniciando...\n");
