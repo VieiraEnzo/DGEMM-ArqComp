@@ -3,7 +3,7 @@
 
 int main() {
     
-    const int n = 4000;
+    const int n = 8000;
 
 
     printf("iniciando...\n");
@@ -19,7 +19,7 @@ int main() {
 
     // abrir o arquivo para escrita
     printf("abrindo arquivo...\n");
-    FILE *fp = fopen("matrizB.csv", "w");
+    FILE *fp = fopen("matrizA_8000.csv", "w");
     if (fp == NULL) {
         printf("Erro ao abrir o arquivo\n");
         return 1;

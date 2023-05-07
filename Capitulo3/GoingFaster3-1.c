@@ -18,7 +18,7 @@ void dgemm(size_t n, double* A, double* B, double* C)
 int main() {
 
     printf("mallocking space\n");
-    const int n = 6000;
+    const int n = 4000;
     double *A = (double*)malloc(n * n * sizeof(double));
     double *B = (double*)malloc(n * n * sizeof(double));
     double *C = (double*)malloc(n * n * sizeof(double));
