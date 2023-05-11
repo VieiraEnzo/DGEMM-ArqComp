@@ -2,7 +2,7 @@
 
 echo iniciando
 
-for /l %%i in (0,1,9) do (
+for /l %%i in (0,1,2) do (
   echo -------------------------------- Rodando 3-1:  %%i --------------------------------
   Capitulo3\GoingFaster3-1_8000.exe
 )
